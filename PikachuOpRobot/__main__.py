@@ -11,7 +11,7 @@ from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryH
 from telegram.ext.dispatcher import run_async, DispatcherHandlerStop
 from telegram.utils.helpers import escape_markdown
 
-from Pikachu import (
+from PikachuOpRobot import (
     dispatcher,
     DEV_USERS,
     SUDO_USERS,
