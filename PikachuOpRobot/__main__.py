@@ -39,8 +39,8 @@ from PikachuOpRobot.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-`𝐇𝐢..𝐖𝐞𝐥𝐜𝐨𝐦𝐞` [😎](https://telegra.ph/file/9ae130d70ce2bd0305678.mp4)
-`𝐈'𝐦` 𝐃𝐞𝐯𝐢𝐥🔥🔥
+`𝐇𝐢..𝐖𝐞𝐥𝐜𝐨𝐦𝐞` [😎](https://telegra.ph/file/aebae6e955f9ba4adcedf.jpg)
+`𝐈'𝐦` 𝐏𝐢𝐤𝐚𝐜𝐡𝐮 🤗
 `𝐈'𝐦 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐌𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬.. 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐥𝐩 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐅𝐢𝐧𝐝 𝐎𝐮𝐭 𝐌𝐨𝐫𝐞 𝐀𝐛𝐨𝐮𝐭 𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞 𝐓𝐨 𝐌𝐲 𝐅𝐮𝐥𝐥 𝐏𝐨𝐭𝐞𝐧𝐭𝐢𝐚𝐥..`
 """
 
@@ -63,7 +63,7 @@ buttons += [[InlineKeyboardButton(text="💫 CLOSE MAIN MENU 💫",
 
 
 HELP_STRINGS = f"""
-`𝐇𝐢.. 𝐈'𝐦` 𝐃𝐞𝐯𝐢𝐥 [😎](https://telegra.ph/file/e793e8cccb7e50631bba5.mp4)
+`𝐇𝐢.. 𝐈'𝐦` 𝐏𝐢𝐤𝐚𝐜𝐡𝐮 [😎](https://telegra.ph/file/8d7f24cd83fd817d3405f.jpg)
 `𝐂𝐥𝐢𝐜𝐤 𝐨𝐧 𝐭𝐡𝐞 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐛𝐞𝐥𝐨𝐰 𝐭𝐨 𝐠𝐞𝐭 𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐚𝐛𝐨𝐮𝐭 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐦𝐨𝐝𝐮𝐥𝐞𝐬..`"""
 
 IMPORTED = {}
