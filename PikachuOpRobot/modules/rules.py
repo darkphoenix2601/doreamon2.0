@@ -1,26 +1,24 @@
 from typing import Optional
 
+import PikachuOpRobot.modules.sql.rules_sql as sql
+from PikachuOpRobot import dispatcher
+from PikachuOpRobot.modules.helper_funcs.chat_status import user_admin
+from PikachuOpRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
     Message,
     ParseMode,
+    Update,
     User,
 )
 from telegram.error import BadRequest
-from telegram.ext import CommandHandler, Filters, run_async
+from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import escape_markdown
-
-import PikachuOpRobot.modules.sql.rules_sql as sql
-from PikachuOpRobot import dispatcher
-from PikachuOpRobot.modules.helper_funcs.alternate import typing_action
-from PikachuOpRobot.modules.helper_funcs.chat_status import user_admin
-from PikachuOpRobot.modules.helper_funcs.string_handling import markdown_parser
 
 
 @run_async
-@typing_action
-def get_rules(update, context):
+def get_rules(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     send_rules(update, chat_id)
 
@@ -36,18 +34,19 @@ def send_rules(update, chat_id, from_pm=False):
             bot.send_message(
                 user.id,
                 "The rules shortcut for this chat hasn't been set properly! Ask admins to "
-                "fix this.",
+                "fix this.\nMaybe they forgot the hyphen in ID",
             )
             return
         else:
             raise
 
     rules = sql.get_rules(chat_id)
-    text = "The rules for *{}* are:\n\n{}".format(
-        escape_markdown(chat.title), rules)
+    text = f"The rules for *{escape_markdown(chat.title)}* are:\n\n{rules}"
 
     if from_pm and rules:
-        bot.send_message(user.id, text, parse_mode=ParseMode.MARKDOWN)
+        bot.send_message(
+            user.id, text, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
+        )
     elif from_pm:
         bot.send_message(
             user.id,
@@ -56,13 +55,12 @@ def send_rules(update, chat_id, from_pm=False):
         )
     elif rules:
         update.effective_message.reply_text(
-            "Contact me in PM to get this group's rules.",
+            "Please click the button below to see the rules.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝐑𝐮𝐥𝐞𝐬",
-                            url="t.me/{}?start={}".format(bot.username, chat_id),
+                            text="RULES", url=f"t.me/{bot.username}?start={chat_id}"
                         )
                     ]
                 ]
@@ -77,37 +75,32 @@ def send_rules(update, chat_id, from_pm=False):
 
 @run_async
 @user_admin
-@typing_action
-def set_rules(update, context):
+def set_rules(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     msg = update.effective_message  # type: Optional[Message]
     raw_text = msg.text
-    # use python's maxsplit to separate cmd and args
-    args = raw_text.split(None, 1)
+    args = raw_text.split(None, 1)  # use python's maxsplit to separate cmd and args
     if len(args) == 2:
         txt = args[1]
-        # set correct offset relative to command
-        offset = len(txt) - len(raw_text)
+        offset = len(txt) - len(raw_text)  # set correct offset relative to command
         markdown_rules = markdown_parser(
             txt, entities=msg.parse_entities(), offset=offset
         )
 
         sql.set_rules(chat_id, markdown_rules)
-        update.effective_message.reply_text(
-            "Successfully set rules for this group.")
+        update.effective_message.reply_text("Successfully set rules for this group.")
 
 
 @run_async
 @user_admin
-@typing_action
-def clear_rules(update, context):
+def clear_rules(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     sql.set_rules(chat_id, "")
     update.effective_message.reply_text("Successfully cleared rules!")
 
 
 def __stats__():
-    return "× {} chats have rules set.".format(sql.num_chats())
+    return f"• {sql.num_chats()} chats have rules set."
 
 
 def __import_data__(chat_id, data):
@@ -121,27 +114,22 @@ def __migrate__(old_chat_id, new_chat_id):
 
 
 def __chat_settings__(chat_id, user_id):
-    return "This chat has had it's rules set: `{}`".format(
-        bool(sql.get_rules(chat_id)))
+    return f"This chat has had it's rules set: `{bool(sql.get_rules(chat_id))}`"
 
 
 __help__ = """
-Every chat works with different rules; this module will help make those rules clearer!
+ ❍ /rules*:* get the rules for this chat.
 
- ➩ /rules: get the rules for this chat.
-
-*Admin only:*
- ➩ /setrules <your rules here>: Sets rules for the chat.
- ➩ /clearrules: Clears saved rules for the chat.
+*Admins only:*
+ ❍ /setrules <your rules here>*:* set the rules for this chat.
+ ❍ /clearrules*:* clear the rules for this chat.
 """
 
 __mod_name__ = "RULES"
 
 GET_RULES_HANDLER = CommandHandler("rules", get_rules, filters=Filters.group)
-SET_RULES_HANDLER = CommandHandler(
-    "setrules", set_rules, filters=Filters.group)
-RESET_RULES_HANDLER = CommandHandler(
-    "clearrules", clear_rules, filters=Filters.group)
+SET_RULES_HANDLER = CommandHandler("setrules", set_rules, filters=Filters.group)
+RESET_RULES_HANDLER = CommandHandler("clearrules", clear_rules, filters=Filters.group)
 
 dispatcher.add_handler(GET_RULES_HANDLER)
 dispatcher.add_handler(SET_RULES_HANDLER)
