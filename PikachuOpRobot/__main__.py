@@ -11,7 +11,7 @@ from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryH
 from telegram.ext.dispatcher import run_async, DispatcherHandlerStop
 from telegram.utils.helpers import escape_markdown
 
-from PikachuOpRobot import (
+from Elizabeth import (
     dispatcher,
     DEV_USERS,
     SUDO_USERS,
@@ -39,32 +39,33 @@ from PikachuOpRobot.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-`𝐇𝐢..𝐖𝐞𝐥𝐜𝐨𝐦𝐞` [😎](https://telegra.ph/file/aebae6e955f9ba4adcedf.jpg)
-`𝐈'𝐦` 𝐏𝐢𝐤𝐚𝐜𝐡𝐮 ❤
-`𝐈'𝐦 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐌𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬.. 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐥𝐩 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐅𝐢𝐧𝐝 𝐎𝐮𝐭 𝐌𝐨𝐫𝐞 𝐀𝐛𝐨𝐮𝐭 𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞 𝐓𝐨 𝐌𝐲 𝐅𝐮𝐥𝐥 𝐏𝐨𝐭𝐞𝐧𝐭𝐢𝐚𝐥..`
+`Hɪ Wᴇʟᴄᴏᴍᴇ..` [😈](https://telegra.ph/file/5fc12b6b78d502eeec667.jpg)
+`I'ᴍ` Ꮲιкα¢нυ 😎
+`I'ᴍ Hᴇʀᴇ Tᴏ Hᴇʟᴘ Yᴏᴜ Mᴀɴᴀɢᴇ Yᴏᴜʀ Gʀᴏᴜᴘs.. Cʟɪᴄᴋ Hᴇʟᴘ Bᴜᴛᴛᴏɴ Tᴏ Fɪɴᴅ Oᴜᴛ Mᴏʀᴇ Aʙᴏᴜᴛ Hᴏᴡ Tᴏ Usᴇ Mᴇ Tᴏ Mʏ Fᴜʟʟ Pᴏᴛᴇɴᴛɪᴀʟ..`
 """
 
-buttons = [[InlineKeyboardButton(text="🖤 𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🖤",
+buttons = [[InlineKeyboardButton(text="Hᴇʟᴘ Aɴᴅ Cᴏᴍᴍᴀɴᴅs",
                                   callback_data="help_back"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="👾 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐩 👾",
+buttons += [[InlineKeyboardButton(text="Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴘ",
                                   url="t.me/Pikachu_op_robot?startgroup=true"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 💫",
-                                  url="https://t.me/https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT"),
-             InlineKeyboardButton(text="💝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐩 💝",
-                                  url="https://t.me/PikachuSupport"),
+buttons += [[InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ Cᴏᴅᴇ",
+                                  url="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT"),
+             InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ Gʀᴘ",
+                                  url="https://t.me/PIIKACHUSUPPORT"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="💫 𝐂𝐥𝐨𝐬𝐞 𝐌𝐚𝐢𝐧 𝐌𝐞𝐧𝐮 💫",
+buttons += [[InlineKeyboardButton(text="Cʟᴏsᴇ Mᴀɪɴ Mᴇɴᴜ",
                                   callback_data="close_menu")]]
 
 
 HELP_STRINGS = f"""
-`𝐇𝐢.. 𝐈'𝐦` 𝐏𝐢𝐤𝐚𝐜𝐡𝐮 [😎](https://telegra.ph/file/8d7f24cd83fd817d3405f.jpg)
-`𝐂𝐥𝐢𝐜𝐤 𝐨𝐧 𝐭𝐡𝐞 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐛𝐞𝐥𝐨𝐰 𝐭𝐨 𝐠𝐞𝐭 𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐚𝐛𝐨𝐮𝐭 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐦𝐨𝐝𝐮𝐥𝐞𝐬..`"""
+`Hɪ.. I'ᴍ` Pɪᴋᴀᴄʜᴜ [😈](https://telegra.ph/file/4e49e42ec683e61f4fc7a.jpg)
+`Cʟɪᴄᴋ Oɴ Tʜᴇ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ Tᴏ Gᴇᴛ Dᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ Aʙᴏᴜᴛ Sᴘɪᴄᴇғɪᴄ Mᴏᴅᴜʟᴇs..`"""
+
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -81,7 +82,7 @@ GDPR = []
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module(
-        "PikachuOpRobot.modules." + module_name)
+        "Elizabeth.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -176,7 +177,7 @@ def start(update, context):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text("𝐇𝐞𝐲𝐚...,𝐏𝐢𝐤𝐚𝐜𝐡𝐮🔥 𝐇𝐞𝐫𝐞,𝐇𝐨𝐰 𝐂𝐚𝐧 𝐈 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮? 🧐")
+        update.effective_message.reply_text("ʏᴜss, ɪ ᴀᴍ ᴀʟʀᴇᴀᴅʏ ᴏɴʟɪɴᴇ 😎🔥")
 
 
 
@@ -192,12 +193,12 @@ def send_start(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
     text = PM_START_TEXT
-    buttons = [[InlineKeyboardButton(text="🖤 𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🖤",
+    buttons = [[InlineKeyboardButton(text="Hᴇʟᴘ Aɴᴅ Cᴀᴍᴍᴀɴᴅs",
                                   callback_data="help_back"),
     ]]
              
 
-    buttons += [[InlineKeyboardButton(text="𝐂𝐥𝐨𝐬𝐞 𝐓𝐡𝐞 𝐌𝐞𝐧𝐮 🔥",
+    buttons += [[InlineKeyboardButton(text="Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ",
                                   callback_data="close_menu")]]
 
 
@@ -220,8 +221,8 @@ def start_stop(update, context):
 
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
-    text = "⚠ 𝐓𝐡𝐞 𝐌𝐞𝐧𝐮 𝐈𝐬 𝐂𝐥𝐨𝐬𝐞 ⚠"
-    buttons = [[InlineKeyboardButton(text="🔄 𝐑𝐞𝐨𝐩𝐞𝐧 𝐌𝐞𝐧𝐮 🔄",
+    text = "Tʜᴇ Mᴇɴᴜ Is Cʟᴏsᴇ"
+    buttons = [[InlineKeyboardButton(text="Rᴇᴏᴘᴇɴ Mᴇɴᴜ",
                                      callback_data="bot_start")]]
 
     update.effective_message.reply_text(
@@ -340,13 +341,13 @@ def get_help(update, context):
     if chat.type != chat.PRIVATE:
 
         update.effective_message.reply_text(
-            "𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐞 𝐢𝐧 𝐏𝐌 𝐭𝐨 𝐠𝐞𝐭 𝐭𝐡𝐞 𝐥𝐢𝐬𝐭 𝐨𝐟 𝐩𝐨𝐬𝐬𝐢𝐛𝐥𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬.🚸",
+            "ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴘᴏssɪʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.🚸",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬❓",
-                            url="t.me/Pikachu_op_robot?start=help".format(context.bot.username),
+                            text="🔥 𝑯𝑬𝑳𝑷 🔥",
+                            url="t.me/pikachu_op_robot_support?start=help".format(context.bot.username),
                         )
                     ]
                 ]
@@ -357,7 +358,7 @@ def get_help(update, context):
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
         text = (
-            "𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐡𝐞𝐥𝐩 𝐟𝐨𝐫 𝐭𝐡𝐞 *{}* 𝐦𝐨𝐝𝐮𝐥𝐞:\n".format(
+            "ʜᴇʀᴇ ɪs ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ *{}* ᴍᴏᴅᴜʟᴇ:\n".format(
                 HELPABLE[module].__mod_name__
             )
             + HELPABLE[module].__help__
@@ -366,7 +367,7 @@ def get_help(update, context):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="𝐆𝐨 𝐛𝐚𝐜𝐤", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="💔 ʙᴀᴄᴋ 💔", callback_data="help_back")]]
             ),
         )
 
@@ -374,7 +375,7 @@ def get_help(update, context):
         keyb = paginate_modules(0, HELPABLE, "help")
         # Add aditional button if staff user detected
         if user.id in DEV_USERS or user.id in SUDO_USERS or user.id in SUPPORT_USERS:
-            keyb += [[InlineKeyboardButton(text="STAFF",
+            keyb += [[InlineKeyboardButton(text="Staff",
                                            callback_data="help_staff")]]
 
         send_help(chat.id, HELP_STRINGS, InlineKeyboardMarkup(keyb))
@@ -444,7 +445,7 @@ def settings_button(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="𝐁𝐚𝐜𝐤",
+                                text="| GO BACK |",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -513,14 +514,14 @@ def get_settings(update, context):
     # ONLY send settings in PM
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
-            text = "𝐂𝐥𝐢𝐜𝐤 𝐡𝐞𝐫𝐞 𝐭𝐨 𝐠𝐞𝐭 𝐭𝐡𝐢𝐬 𝐜𝐡𝐚𝐭'𝐬 𝐬𝐞𝐭𝐭𝐢𝐧𝐠𝐬, 𝐚𝐬 𝐰𝐞𝐥𝐥 𝐚𝐬 𝐲𝐨𝐮𝐫𝐬.🚸"
+            text = "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ᴛʜɪs ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs, ᴀs ᴡᴇʟʟ ᴀs ʏᴏᴜʀs.🚸"
             msg.reply_text(
                 text,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="❤ 𝐒𝐞𝐭𝐭𝐢𝐧𝐠𝐬 ❤",
+                                text="🔱 𝗦𝗘𝗧𝗧𝗜𝗡𝗚𝗦 🔱",
                                 url="t.me/pikachu_op_robot?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
@@ -530,7 +531,7 @@ def get_settings(update, context):
                 ),
             )
         else:
-            text = "𝐂𝐥𝐢𝐜𝐤 𝐡𝐞𝐫𝐞 𝐭𝐨 𝐜𝐡𝐞𝐜𝐤 𝐲𝐨𝐮𝐫 𝐬𝐞𝐭𝐭𝐢𝐧𝐠𝐬."
+            text = "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs."
 
     else:
         send_settings(chat.id, user.id, True)
@@ -641,7 +642,7 @@ def main():
         updater.start_polling(timeout=15, read_latency=4)
         updater.bot.send_message(
             chat_id=MESSAGE_DUMP,
-            text="Who do you think you are, Forrest Gump?")
+            text="𝗣𝗜𝗞𝗔 𝗣𝗜𝗞𝗔 𝗜 𝗡𝗢𝗪 𝗢𝗡𝗟𝗜𝗡𝗘")
         client.run_until_disconnected()
 
     updater.idle()
