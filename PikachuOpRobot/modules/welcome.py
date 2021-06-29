@@ -189,7 +189,7 @@ def new_member(update, context):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "𝐌𝐘 𝐎𝐖𝐍𝐄𝐑 𝐈𝐒 𝐈𝐍 𝐓𝐇𝐄 𝐇𝐎𝐔𝐒𝐄𝐄𝐄𝐄, 𝐋𝐄𝐓'𝐒 𝐆𝐄𝐓 𝐓𝐇𝐈𝐒 𝐏𝐀𝐑𝐓𝐘 𝐒𝐓𝐀𝐑𝐓𝐄𝐃!",
+                    "𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐇𝐞𝐫𝐞, 𝐋𝐞𝐭'𝐬 𝐒𝐞𝐞 𝐖𝐡𝐚𝐭 𝐇𝐚𝐩𝐩𝐞𝐧𝐞𝐝 𝐍𝐨𝐰.. 🔥",
                     reply_to_message_id=reply,
                 )
                 continue
