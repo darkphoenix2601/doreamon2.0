@@ -1,6 +1,6 @@
 from typing import Optional
 
-form PikachuOpRobot.modules.sql.rules_sql as sql
+import PikachuOpRobot.modules.sql.rules_sql
 from PikachuOpRobot import dispatcher
 from PikachuOpRobot.modules.helper_funcs.chat_status import user_admin
 from PikachuOpRobot.modules.helper_funcs.string_handling import markdown_parser
