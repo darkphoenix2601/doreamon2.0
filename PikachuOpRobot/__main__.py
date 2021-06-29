@@ -39,7 +39,7 @@ from Pikachu.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-`𝐇𝐢..𝐖𝐞𝐥𝐜𝐨𝐦𝐞` [😎](https://telegra.ph/file/9ae130d70ce2bd0305678.mp4)
+`𝐇𝐢..𝐖𝐞𝐥𝐜𝐨𝐦𝐞` [😎](https://telegra.ph/file/aebae6e955f9ba4adcedf.jpg)
 `𝐈'𝐦` 𝐏𝐢𝐤𝐚𝐜𝐡𝐮 ❤
 `𝐈'𝐦 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐌𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬.. 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐥𝐩 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐅𝐢𝐧𝐝 𝐎𝐮𝐭 𝐌𝐨𝐫𝐞 𝐀𝐛𝐨𝐮𝐭 𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞 𝐓𝐨 𝐌𝐲 𝐅𝐮𝐥𝐥 𝐏𝐨𝐭𝐞𝐧𝐭𝐢𝐚𝐥..`
 """
@@ -63,7 +63,7 @@ buttons += [[InlineKeyboardButton(text="💫 𝐂𝐥𝐨𝐬𝐞 𝐌𝐚𝐢�
 
 
 HELP_STRINGS = f"""
-`𝐇𝐢.. 𝐈'𝐦` 𝐏𝐢𝐤𝐚𝐜𝐡𝐮 [😎](https://telegra.ph/file/e793e8cccb7e50631bba5.mp4)
+`𝐇𝐢.. 𝐈'𝐦` 𝐏𝐢𝐤𝐚𝐜𝐡𝐮 [😎](https://telegra.ph/file/8d7f24cd83fd817d3405f.jpg)
 `𝐂𝐥𝐢𝐜𝐤 𝐨𝐧 𝐭𝐡𝐞 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐛𝐞𝐥𝐨𝐰 𝐭𝐨 𝐠𝐞𝐭 𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐚𝐛𝐨𝐮𝐭 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐦𝐨𝐝𝐮𝐥𝐞𝐬..`"""
 
 IMPORTED = {}
@@ -81,7 +81,7 @@ GDPR = []
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module(
-        "Elizabeth.modules." + module_name)
+        "Pikachu.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -357,7 +357,7 @@ def get_help(update, context):
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
         text = (
-            "Here is the available help for the *{}* module:\n".format(
+            "𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐡𝐞𝐥𝐩 𝐟𝐨𝐫 𝐭𝐡𝐞 *{}* 𝐦𝐨𝐝𝐮𝐥𝐞:\n".format(
                 HELPABLE[module].__mod_name__
             )
             + HELPABLE[module].__help__
@@ -374,7 +374,7 @@ def get_help(update, context):
         keyb = paginate_modules(0, HELPABLE, "help")
         # Add aditional button if staff user detected
         if user.id in DEV_USERS or user.id in SUDO_USERS or user.id in SUPPORT_USERS:
-            keyb += [[InlineKeyboardButton(text="Staff",
+            keyb += [[InlineKeyboardButton(text="STAFF",
                                            callback_data="help_staff")]]
 
         send_help(chat.id, HELP_STRINGS, InlineKeyboardMarkup(keyb))
