@@ -187,7 +187,7 @@ def send_start(update, context):
         query = update.callback_query
         query.message.delete()
     except BaseException:
-        pass io
+        pass
 
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
