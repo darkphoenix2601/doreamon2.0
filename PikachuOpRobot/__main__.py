@@ -39,33 +39,32 @@ from PikachuOpRobot.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-`Hɪ Wᴇʟᴄᴏᴍᴇ..` [😈](https://telegra.ph/file/aebae6e955f9ba4adcedf.jpg)
-`I'ᴍ` Ꮲιкα¢нυ 😎
-`I'ᴍ Hᴇʀᴇ Tᴏ Hᴇʟᴘ Yᴏᴜ Mᴀɴᴀɢᴇ Yᴏᴜʀ Gʀᴏᴜᴘs.. Cʟɪᴄᴋ Hᴇʟᴘ Bᴜᴛᴛᴏɴ Tᴏ Fɪɴᴅ Oᴜᴛ Mᴏʀᴇ Aʙᴏᴜᴛ Hᴏᴡ Tᴏ Usᴇ Mᴇ Tᴏ Mʏ Fᴜʟʟ Pᴏᴛᴇɴᴛɪᴀʟ..`
+`𝐇𝐢..𝐖𝐞𝐥𝐜𝐨𝐦𝐞` [😎](https://telegra.ph/file/9ae130d70ce2bd0305678.mp4)
+`𝐈'𝐦` 𝐃𝐞𝐯𝐢𝐥🔥🔥
+`𝐈'𝐦 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐌𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬.. 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐥𝐩 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐅𝐢𝐧𝐝 𝐎𝐮𝐭 𝐌𝐨𝐫𝐞 𝐀𝐛𝐨𝐮𝐭 𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞 𝐓𝐨 𝐌𝐲 𝐅𝐮𝐥𝐥 𝐏𝐨𝐭𝐞𝐧𝐭𝐢𝐚𝐥..`
 """
 
-buttons = [[InlineKeyboardButton(text="Hᴇʟᴘ Aɴᴅ Cᴏᴍᴍᴀɴᴅs",
+buttons = [[InlineKeyboardButton(text="🖤 HELP AND COMMANDS 🖤",
                                   callback_data="help_back"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴘ",
+buttons += [[InlineKeyboardButton(text="👾 ADD ME TO YOUR GROUP 👾",
                                   url="t.me/Pikachu_op_robot?startgroup=true"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ Cᴏᴅᴇ",
+buttons += [[InlineKeyboardButton(text="SOURCE CODE 💫",
                                   url="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT"),
-             InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ Gʀᴘ",
+             InlineKeyboardButton(text="💝 SUPPORT GRP 💝",
                                   url="https://t.me/PIIKACHUSUPPORT"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="Cʟᴏsᴇ Mᴀɪɴ Mᴇɴᴜ",
+buttons += [[InlineKeyboardButton(text="💫 CLOSE MAIN MENU 💫",
                                   callback_data="close_menu")]]
 
 
 HELP_STRINGS = f"""
-`Hɪ.. I'ᴍ` Pɪᴋᴀᴄʜᴜ [😈]https://telegra.ph/file/8d7f24cd83fd817d3405f.jpg()
-`Cʟɪᴄᴋ Oɴ Tʜᴇ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ Tᴏ Gᴇᴛ Dᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ Aʙᴏᴜᴛ Sᴘɪᴄᴇғɪᴄ Mᴏᴅᴜʟᴇs..`"""
-
+`𝐇𝐢.. 𝐈'𝐦` 𝐃𝐞𝐯𝐢𝐥 [😎](https://telegra.ph/file/e793e8cccb7e50631bba5.mp4)
+`𝐂𝐥𝐢𝐜𝐤 𝐨𝐧 𝐭𝐡𝐞 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐛𝐞𝐥𝐨𝐰 𝐭𝐨 𝐠𝐞𝐭 𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐚𝐛𝐨𝐮𝐭 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐦𝐨𝐝𝐮𝐥𝐞𝐬..`"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -177,7 +176,7 @@ def start(update, context):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text("ʏᴜss, ɪ ᴀᴍ ᴀʟʀᴇᴀᴅʏ ᴏɴʟɪɴᴇ 😎🔥")
+        update.effective_message.reply_text("𝐇𝐞𝐲𝐚...,𝐃𝐞𝐯𝐢𝐥 🔥 𝐇𝐞𝐫𝐞,𝐇𝐨𝐰 𝐂𝐚𝐧 𝐈 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮? 🧐")
 
 
 
@@ -188,17 +187,17 @@ def send_start(update, context):
         query = update.callback_query
         query.message.delete()
     except BaseException:
-        pass
+        pass io
 
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
     text = PM_START_TEXT
-    buttons = [[InlineKeyboardButton(text="Hᴇʟᴘ Aɴᴅ Cᴀᴍᴍᴀɴᴅs",
+    buttons = [[InlineKeyboardButton(text="🖤 HELP AND COMMANDS 🖤",
                                   callback_data="help_back"),
     ]]
              
 
-    buttons += [[InlineKeyboardButton(text="Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ",
+    buttons += [[InlineKeyboardButton(text="CLOSE MAIN MENU 🔥",
                                   callback_data="close_menu")]]
 
 
@@ -221,8 +220,8 @@ def start_stop(update, context):
 
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
-    text = "Tʜᴇ Mᴇɴᴜ Is Cʟᴏsᴇ"
-    buttons = [[InlineKeyboardButton(text="Rᴇᴏᴘᴇɴ Mᴇɴᴜ",
+    text = "⚠ THE MENU IS CLOSE ⚠"
+    buttons = [[InlineKeyboardButton(text="🔄 REOPEN MENU 🔄",
                                      callback_data="bot_start")]]
 
     update.effective_message.reply_text(
@@ -346,8 +345,8 @@ def get_help(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🔥 𝑯𝑬𝑳𝑷 🔥",
-                            url="t.me/pikachu_op_robot_support?start=help".format(context.bot.username),
+                            text="HELP ❓",
+                            url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
                 ]
@@ -358,7 +357,7 @@ def get_help(update, context):
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
         text = (
-            "ʜᴇʀᴇ ɪs ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ *{}* ᴍᴏᴅᴜʟᴇ:\n".format(
+            "Here is the available help for the *{}* module:\n".format(
                 HELPABLE[module].__mod_name__
             )
             + HELPABLE[module].__help__
@@ -367,7 +366,7 @@ def get_help(update, context):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="💔 ʙᴀᴄᴋ 💔", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="𝗚𝗢 𝗕𝗔𝗖𝗞 ", callback_data="help_back")]]
             ),
         )
 
@@ -445,7 +444,7 @@ def settings_button(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="| GO BACK |",
+                                text="𝗕𝗔𝗖𝗞 🤗",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -514,15 +513,15 @@ def get_settings(update, context):
     # ONLY send settings in PM
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
-            text = "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ᴛʜɪs ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs, ᴀs ᴡᴇʟʟ ᴀs ʏᴏᴜʀs.🚸"
+            text = "Click here to get this chat's settings, as well as yours.🚸"
             msg.reply_text(
                 text,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="🔱 𝗦𝗘𝗧𝗧𝗜𝗡𝗚𝗦 🔱",
-                                url="t.me/pikachu_op_robot?start=stngs_{}".format(
+                                text="⚙️ 𝗦𝗘𝗧𝗧𝗜𝗡𝗚𝗦 ⚙️",
+                                url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
                             )
@@ -642,7 +641,7 @@ def main():
         updater.start_polling(timeout=15, read_latency=4)
         updater.bot.send_message(
             chat_id=MESSAGE_DUMP,
-            text="𝗣𝗜𝗞𝗔 𝗣𝗜𝗞𝗔 𝗜 𝗡𝗢𝗪 𝗢𝗡𝗟𝗜𝗡𝗘")
+            text="𝐏𝐢𝐤𝐚 𝐏𝐢𝐤𝐚 𝐈 𝐍𝐨𝐰 𝐎𝐧𝐥𝐢𝐧𝐞")
         client.run_until_disconnected()
 
     updater.idle()
