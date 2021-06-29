@@ -4,7 +4,7 @@
     <a href="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT/network/members"><img src="https://img.shields.io/github/forks/LEGEND-Xxxxx/PiKaCHu-pRoBoT?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a>
 </p>
 
-![logo](https://telegra.ph/file/0157c7b6cd269654ee987.jpg)
+![logo](https://telegra.ph/file/2130ce485324a52fa5122.jpg)
 <p align="center">
 
 
