@@ -128,5 +128,5 @@ repeat for your username, password, hostname (localhost?), port (5432?), and db 
 ### Notice
 <b> Note one think </b> I waste my many time in front my pc for bring back she.so that's respectable.i know you import or frok this repo and make changes.. that's ok I don't care. But kepp Credits.if you Kang this repo without credits I believe you are a bitch..
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)]()
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT.git)
 
