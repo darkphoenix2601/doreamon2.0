@@ -1,7 +1,7 @@
-if [ -f Pikachu.session ]; then
-    kill $(pgrep -f 'python3 -m Pikachu')
-    rm -f Pikachu.session-journal Pikachu.session
+if [ -f PikachuOpRobot.session ]; then
+    kill $(pgrep -f 'python3 -m PikachuOpRobot')
+    rm -f PikachuOpRobot.session-journal PikachuOpRobot.session
 fi
 
 # start
-python3 -m Pikachu
+python3 -m PikachuOpRobot
