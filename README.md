@@ -1,4 +1,4 @@
-# ριкα¢нυ
+# 𝐏𝐢𝐤𝐚𝐜𝐡𝐮 🇮🇳
 <p align="center">
     <a href="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT/stargazers"><img src="https://img.shields.io/github/stars/LEGEND-Xxxxx/PiKaCHu-pRoBoT?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
     <a href="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT/network/members"><img src="https://img.shields.io/github/forks/LEGEND-Xxxxx/PiKaCHu-pRoBoT?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a>
