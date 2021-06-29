@@ -11,7 +11,7 @@ from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryH
 from telegram.ext.dispatcher import run_async, DispatcherHandlerStop
 from telegram.utils.helpers import escape_markdown
 
-from Elizabeth import (
+from PikachuOpRobot import (
     dispatcher,
     DEV_USERS,
     SUDO_USERS,
@@ -39,7 +39,7 @@ from PikachuOpRobot.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-`Hɪ Wᴇʟᴄᴏᴍᴇ..` [😈](https://telegra.ph/file/5fc12b6b78d502eeec667.jpg)
+`Hɪ Wᴇʟᴄᴏᴍᴇ..` [😈](https://telegra.ph/file/aebae6e955f9ba4adcedf.jpg)
 `I'ᴍ` Ꮲιкα¢нυ 😎
 `I'ᴍ Hᴇʀᴇ Tᴏ Hᴇʟᴘ Yᴏᴜ Mᴀɴᴀɢᴇ Yᴏᴜʀ Gʀᴏᴜᴘs.. Cʟɪᴄᴋ Hᴇʟᴘ Bᴜᴛᴛᴏɴ Tᴏ Fɪɴᴅ Oᴜᴛ Mᴏʀᴇ Aʙᴏᴜᴛ Hᴏᴡ Tᴏ Usᴇ Mᴇ Tᴏ Mʏ Fᴜʟʟ Pᴏᴛᴇɴᴛɪᴀʟ..`
 """
@@ -63,7 +63,7 @@ buttons += [[InlineKeyboardButton(text="Cʟᴏsᴇ Mᴀɪɴ Mᴇɴᴜ",
 
 
 HELP_STRINGS = f"""
-`Hɪ.. I'ᴍ` Pɪᴋᴀᴄʜᴜ [😈](https://telegra.ph/file/4e49e42ec683e61f4fc7a.jpg)
+`Hɪ.. I'ᴍ` Pɪᴋᴀᴄʜᴜ [😈]https://telegra.ph/file/8d7f24cd83fd817d3405f.jpg()
 `Cʟɪᴄᴋ Oɴ Tʜᴇ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ Tᴏ Gᴇᴛ Dᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ Aʙᴏᴜᴛ Sᴘɪᴄᴇғɪᴄ Mᴏᴅᴜʟᴇs..`"""
 
 
