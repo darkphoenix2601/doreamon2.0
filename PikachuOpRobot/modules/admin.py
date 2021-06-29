@@ -7,30 +7,30 @@ from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-from Pikachu import dispatcher
-from Pikachu.modules.connection import connected
-from Pikachu.modules.disable import DisableAbleCommandHandler
-from Pikachu.modules.helper_funcs.admin_rights import (
+from PikachuOpRobot import dispatcher
+from PikachuOpRobot.modules.connection import connected
+from PikachuOpRobot.modules.disable import DisableAbleCommandHandler
+from PikachuOpRobot.modules.helper_funcs.admin_rights import (
     user_can_changeinfo,
     user_can_pin,
     user_can_promote,
 )
-from Pikachu.modules.helper_funcs.alternate import typing_action
-from Pikachu.modules.helper_funcs.chat_status import (
+from PikachuOpRobot.modules.helper_funcs.alternate import typing_action
+from PikachuOpRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
     user_admin,
 )
-from Pikachu.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from Pikachu.modules.helper_funcs.admin_rights import (
+from PikachuOpRobot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from PikachuOpRobot.modules.helper_funcs.admin_rights import (
     user_can_pin,
     user_can_promote,
     user_can_changeinfo,
 )
-from Pikachu.modules.helper_funcs.alternate import typing_action
-from Pikachu.modules.connection import connected
-from Pikachu.modules.log_channel import loggable
+from PikachuOpRobot.modules.helper_funcs.alternate import typing_action
+from PikachuOpRobot.modules.connection import connected
+from PikachuOpRobot.modules.log_channel import loggable
 
 
 @run_async
