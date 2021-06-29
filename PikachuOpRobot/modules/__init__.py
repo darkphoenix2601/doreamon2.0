@@ -1,6 +1,6 @@
 import sys
 
-from Pikachu import LOAD, LOGGER, NO_LOAD
+from PikachuOpRobot import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
