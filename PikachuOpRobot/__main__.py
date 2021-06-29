@@ -30,12 +30,12 @@ from Pikachu import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Pikachu.modules import ALL_MODULES
-from Pikachu.modules.purge import client
-from Pikachu.modules.helper_funcs.chat_status import is_user_admin
-from Pikachu.modules.helper_funcs.filters import CustomFilters
-from Pikachu.modules.helper_funcs.misc import paginate_modules
-from Pikachu.modules.helper_funcs.alternate import typing_action
+from PikachuOpRobot.modules import ALL_MODULES
+from PikachuOpRobot.modules.purge import client
+from PikachuOpRobot.modules.helper_funcs.chat_status import is_user_admin
+from PikachuOpRobot.modules.helper_funcs.filters import CustomFilters
+from PikachuOpRobot.modules.helper_funcs.misc import paginate_modules
+from PikachuOpRobot.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
@@ -81,7 +81,7 @@ GDPR = []
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module(
-        "Pikachu.modules." + module_name)
+        "PikachuOpRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
