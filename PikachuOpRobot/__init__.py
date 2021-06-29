@@ -122,7 +122,7 @@ if ENV:
 
 
 else:
-    from Pikachu.config import Development as Config
+    from PikachuOpRobot.config import Development as Config
 
     TOKEN = Config.API_KEY
     try:
@@ -220,7 +220,7 @@ STAFF_USERS = list(STAFF)
 WHITELIST_USERS = list(WHITELIST_USERS)
 
 # Load at end to ensure all prev variables have been set
-from Pikachu.modules.helper_funcs.handlers import CustomCommandHandler  # noqa
+from PikachuOpRobot.modules.helper_funcs.handlers import CustomCommandHandler  # noqa
 
 if CUSTOM_CMD and len(CUSTOM_CMD) >= 1:
     tg.CommandHandler = CustomCommandHandler
