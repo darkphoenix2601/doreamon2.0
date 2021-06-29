@@ -1,1 +1,1 @@
-worker: python3 -m Pikachu
+worker: python3 -m PikachuOpRobot
