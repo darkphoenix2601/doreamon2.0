@@ -1,5 +1,5 @@
 from telethon import events
-from Pikachu import client
+from PikachuOpRobot import client
 
 
 def register(**args):
