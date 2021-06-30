@@ -205,7 +205,7 @@ def new_member(update, context):
             # Make bot greet admins
             elif new_mem.id == context.bot.id:
                 update.effective_message.reply_text(
-                    "𝐇𝐄𝐘 😍 {}, 𝐈'𝐌{}! 𝐓𝐇𝐀𝐍𝐊 𝐘𝐎𝐔 𝐅𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐄 𝐓𝐎 {}".format(
+                    "𝐇𝐄𝐘 😍 {}, 𝐈'𝐌 {}! 𝐓𝐇𝐀𝐍𝐊 𝐘𝐎𝐔 𝐅𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐄 𝐓𝐎 {}".format(
                         user.first_name, context.bot.first_name, chat_name
                     ),
                     reply_to_message_id=reply,
@@ -213,7 +213,7 @@ def new_member(update, context):
 
                 context.bot.send_message(
                     MESSAGE_DUMP,
-                    "PIKACHU HAVE BEEN ADDED TO <pre>{}</pre> with ID: \n<pre>{}</pre>".format(
+                    "Pikachu Have Been Added To <pre>{}</pre> with ID: \n<pre>{}</pre>".format(
                         chat.title,
                         chat.id),
                     parse_mode=ParseMode.HTML,
