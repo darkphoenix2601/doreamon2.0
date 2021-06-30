@@ -16,7 +16,7 @@
 
 from sqlalchemy import Column, Numeric, String
 
-from DaisyX.modules.sql import BASE, SESSION
+from PikachuOpRobot.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
