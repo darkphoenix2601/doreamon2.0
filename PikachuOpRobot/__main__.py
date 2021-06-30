@@ -44,21 +44,21 @@ PM_START_TEXT = f"""
 `𝐈'𝐦 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐌𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬.. 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐥𝐩 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐅𝐢𝐧𝐝 𝐎𝐮𝐭 𝐌𝐨𝐫𝐞 𝐀𝐛𝐨𝐮𝐭 𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞 𝐓𝐨 𝐌𝐲 𝐅𝐮𝐥𝐥 𝐏𝐨𝐭𝐞𝐧𝐭𝐢𝐚𝐥..`
 """
 
-buttons = [[InlineKeyboardButton(text="🖤 HELP AND COMMANDS 🖤",
+buttons = [[InlineKeyboardButton(text="🖤 𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🖤",
                                   callback_data="help_back"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="👾 ADD ME TO YOUR GROUP 👾",
+buttons += [[InlineKeyboardButton(text="👾 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 👾",
                                   url="t.me/Pikachu_op_robot?startgroup=true"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="SOURCE CODE 💫",
+buttons += [[InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 💫",
                                   url="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT"),
-             InlineKeyboardButton(text="💝 SUPPORT GRP 💝",
+             InlineKeyboardButton(text="💝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 💝",
                                   url="https://t.me/PIIKACHUSUPPORT"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="💫 CLOSE MAIN MENU 💫",
+buttons += [[InlineKeyboardButton(text="💫 𝐂𝐥𝐨𝐬𝐞 𝐌𝐚𝐢𝐧 𝐌𝐞𝐧𝐮 💫",
                                   callback_data="close_menu")]]
 
 
@@ -192,12 +192,12 @@ def send_start(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
     text = PM_START_TEXT
-    buttons = [[InlineKeyboardButton(text="🖤 HELP AND COMMANDS 🖤",
+    buttons = [[InlineKeyboardButton(text="🖤 𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🖤",
                                   callback_data="help_back"),
     ]]
              
 
-    buttons += [[InlineKeyboardButton(text="CLOSE MAIN MENU 🔥",
+    buttons += [[InlineKeyboardButton(text="𝐂𝐥𝐨𝐬𝐞 𝐌𝐚𝐢𝐧 𝐌𝐞𝐧𝐮🔥",
                                   callback_data="close_menu")]]
 
 
@@ -220,8 +220,8 @@ def start_stop(update, context):
 
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
-    text = "⚠ THE MENU IS CLOSE ⚠"
-    buttons = [[InlineKeyboardButton(text="🔄 REOPEN MENU 🔄",
+    text = "⚠ 𝐓𝐡𝐞 𝐌𝐞𝐧𝐮 𝐈𝐬 𝐂𝐥𝐨𝐬𝐞 ⚠"
+    buttons = [[InlineKeyboardButton(text="🔄 𝐑𝐞𝐨𝐩𝐞𝐧 𝐌𝐞𝐧𝐮 🔄",
                                      callback_data="bot_start")]]
 
     update.effective_message.reply_text(
