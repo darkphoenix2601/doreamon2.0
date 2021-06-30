@@ -176,7 +176,7 @@ def start(update, context):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text("𝐇𝐞𝐲𝐚...,𝐃𝐞𝐯𝐢𝐥 🔥 𝐇𝐞𝐫𝐞,𝐇𝐨𝐰 𝐂𝐚𝐧 𝐈 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮? 🧐")
+        update.effective_message.reply_text("𝐇𝐞𝐲𝐚...,𝐏𝐢𝐤𝐚𝐜𝐡𝐮 🔥 𝐇𝐞𝐫𝐞,𝐇𝐨𝐰 𝐂𝐚𝐧 𝐈 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮? 🧐")
 
 
 
