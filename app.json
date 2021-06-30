@@ -60,7 +60,7 @@
     "SUPPORT_USERS": {
       "description": "Support users Id's.",
       "required": false,
-      "value": "1470850122"
+      "value": "1883720399"
    },
    "WHITELIST_USERS": {
      "description": "Whitelist user Id's.",
@@ -70,7 +70,7 @@
    "DEV_USERS": {
      "description": "Developers id",
      "required": false,
-     "value": "1470850122 1684213341"
+     "value": "1883720399 1684213341"
    },
    "WEBHOOK": {
       "description": "Nothing here.",
