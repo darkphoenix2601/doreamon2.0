@@ -79,7 +79,7 @@ def promote(update, context):
         can_pin_messages=bot_member.can_pin_messages,
     )
 
-    message.reply_text("Sucessfully promoted!{mention}")
+    message.reply_text("Sucessfully promoted!{}")
     return (
         "<b>{}:</b>"
         "\n#PROMOTED"
