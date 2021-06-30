@@ -52,10 +52,10 @@ buttons += [[InlineKeyboardButton(text="👾 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘
                                   url="t.me/Pikachu_op_robot?startgroup=true"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 💫",
-                                  url="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT"),
+buttons += [[InlineKeyboardButton(text="🎉 𝐉𝐨𝐢𝐧 𝐅𝐨𝐫 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🎉",
+                                  url="https://t.me/PIKACHU_UPDATESS"),
              InlineKeyboardButton(text="💝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 💝",
-                                  url="https://t.me/PIIKACHUSUPPORT"),
+                                  url="https://t.me/PIIKACHU_SUPPORT"),
 ]]
 
 buttons += [[InlineKeyboardButton(text="💫 𝐂𝐥𝐨𝐬𝐞 𝐌𝐚𝐢𝐧 𝐌𝐞𝐧𝐮 💫",
