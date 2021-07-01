@@ -7,8 +7,9 @@
 ![logo](https://telegra.ph/file/471cbb30e585ff4772300.jpg)
 <p align="center">
 
+<img src = https://i.pinimg.com/originals/25/d2/54/25d254df236c61306bceb86df5f671f1.gif width = 80 align = "left">
 
-# credits
+#credits
 <b>Khud Ke Code se banaya Hu Bsdk // NO Credits</b>
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
