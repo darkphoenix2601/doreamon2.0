@@ -3,14 +3,6 @@
     <a href="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT/stargazers"><img src="https://img.shields.io/github/stars/LEGEND-Xxxxx/PiKaCHu-pRoBoT?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
     <a href="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT/network/members"><img src="https://img.shields.io/github/forks/LEGEND-Xxxxx/PiKaCHu-pRoBoT?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a>
 </p>
-<p align="center">
-<a href="https://github.com/iisgaurav/PglRobot" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/IisGaurav/PglRobot?style=flat&logo=github&color=success" /> </a>
-<a href="https://github.com/iisgaurav/PglRobot" alt="GitHub commit activity"> <img src="https://img.shields.io/github/commit-activity/m/IisGaurav/PglRobot" /> </a>
-<a href="https://github.com/iisgaurav/PglRobot/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/IisGaurav/PglRobot?style=flat&logo=github" /> </a>
-<a href="https://github.com/iisgaurav/PglRobot/network/members" alt="GitHub forks"> <img src="https://img.shields.io/github/forks/IisGaurav/PglRobot?label=Forks&logo=github" /> </a>
-<a href="https://github.com/iisgaurav/PglRobot" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/IisGaurav/PglRobot?color=success" /> </a>
-<a href="https://github.com/iisgaurav/PglRobot" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/IisGaurav/PglRobot?style=flat&logo=github&color=yellow" /> </a>
-
 ![logo](https://telegra.ph/file/471cbb30e585ff4772300.jpg)
 <p align="center">
 
