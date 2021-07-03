@@ -4,9 +4,6 @@
     <a href="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT/network/members"><img src="https://img.shields.io/github/forks/LEGEND-Xxxxx/PiKaCHu-pRoBoT?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a>
 </p>
 
-</a></p><p align="centre"><a href="https://t.me/AuraXSupport"> <img src="https://img.shields.io/badge/telegram-Support_Group-blue?style=social&logo=telegram" alt="Support" /></a><a href="https://github.com/iisgaurav/PglRobot/stargazers"><img src="https://img.shields.io/github/stars/IisGaurav/PglRobot?style=social"></a><a href="https://github.com/iisgaurav/PglRobot/fork"><img src="https://img.shields.io/github/forks/IisGaurav/PglRobot?label=Fork&logoColor=blue&style=social"></a> <a href="https://github.com/iisgaurav/PglRobot"><img src="https://img.shields.io/github/last-commit/IisGaurav/PglRobot?style=flat-square"></a></p>
-
-
 ![logo](https://telegra.ph/file/471cbb30e585ff4772300.jpg)
 <p align="center">
 
