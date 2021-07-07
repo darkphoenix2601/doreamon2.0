@@ -42,9 +42,9 @@ from PikachuOpRobot.modules.helper_funcs.extraction import (
 from PikachuOpRobot.modules.helper_funcs.string_handling import markdown_parser
 
 # Hello bot owner, I spended for feds many hours of my life, Please don't remove this if you still respect Rocky and Rishisuperyo and Alone Shadow
-# Federation by Rocky 2018-2019
-# Federation rework by Rishisuperyo 2019
-# Federation update v2 by Alone Shadow 2019
+# Federation by 2018-2019
+# Federation rework by  2019
+# Federation update v2 by Shrvan 2019
 #
 # Time spended on feds = 10h by #Rocky
 # Time spended on reworking on the whole feds = 22+ hours by @Rocky_alone_fighter
@@ -52,7 +52,7 @@ from PikachuOpRobot.modules.helper_funcs.string_handling import markdown_parser
 #
 # Total spended for making this features is 68+ hours
 
-# LOGGER.info("Original federation module by Rocky, reworked by Alone Shadow (@Alone_Shadow_x) on Telegram.")
+# LOGGER.info("Original federation module by Rocky, reworked by Shrvan (@Tg_x_Coders) on Telegram.")
 
 # TODO: Fix Loads of code duplication
 
