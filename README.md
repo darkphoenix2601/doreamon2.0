@@ -1,7 +1,7 @@
 # 𝐏𝐢𝐤𝐚𝐜𝐡𝐮 🇮🇳
 <p align="center">
-    <a href="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT/stargazers"><img src="https://img.shields.io/github/stars/LEGEND-Xxxxx/PiKaCHu-pRoBoT?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
-    <a href="https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT/network/members"><img src="https://img.shields.io/github/forks/LEGEND-Xxxxx/PiKaCHu-pRoBoT?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a>
+    <a href="https://github.com/shrvan42/PiKaCHu-pRoBoT/stargazers"><img src="https://img.shields.io/github/stars/shrvan42/PiKaCHu-pRoBoT?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
+    <a href="https://github.com/shrvan42/PiKaCHu-pRoBoT/network/members"><img src="https://img.shields.io/github/forks/shrvan42/PiKaCHu-pRoBoT?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a>
 </p>
 
 ![logo](https://telegra.ph/file/471cbb30e585ff4772300.jpg)
@@ -14,7 +14,7 @@
 <b>Khud Ke Code se banaya Hu Bsdk // NO Credits</b>
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/shrvan42/PiKaCHu-pRoBoT/graphs/commit-activity)
 
 ### Configuration
 
@@ -34,8 +34,8 @@ from Pikachu.sample_config import Config
 
 
 class Development(Config):
-    OWNER_ID = 1684213341   # my telegram ID
-    OWNER_USERNAME = "Alone_shadow_x"  # my telegram username
+    OWNER_ID = 1742353529   # my telegram ID
+    OWNER_USERNAME = "shrvan42"  # my telegram username
     API_KEY = "your bot api key"  # my api key, as provided by the botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     MESSAGE_DUMP = '-1234567890' # some group chat that your bot is a member of
@@ -130,5 +130,5 @@ repeat for your username, password, hostname (localhost?), port (5432?), and db 
 ### Notice
 <b> Note one think </b> I waste my many time in front my pc for bring back she.so that's respectable.i know you import or frok this repo and make changes.. that's ok I don't care. But kepp Credits.if you Kang this repo without credits I believe you are a bitch..
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT.git)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/shrvan42/PiKaCHu-pRoBoT.git)
 
