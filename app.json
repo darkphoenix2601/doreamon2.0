@@ -50,7 +50,7 @@
     "DONATION_LINK": {
       "description": "Enter Donation link..",
       "required": false,
-      "value": "https://t.me/Alone_Shadow_x"
+      "value": "https://t.me/"
     },
     "SUDO_USERS": {
       "description": "List of user id's who will have SUDO rights in your bot(they can't be banned/warned etc. by the bot)",
