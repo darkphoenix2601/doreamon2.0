@@ -3,7 +3,7 @@
   "description": "𝙰 𝙿𝚘𝚠𝚎𝚛𝚏𝚞𝚕 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖 𝙱𝚘𝚝 𝚠𝚛𝚒𝚝𝚝𝚎𝚗 𝚒𝚗 𝙿𝚃𝙱 𝚊𝚗𝚍 𝚃𝚎𝚕𝚎𝚝𝚑𝚘𝚗",
   "logo": "https://telegra.ph/file/2130ce485324a52fa5122.jpg",
   "keywords": ["telegram-bot"],
-  "repository": "https://github.com/LEGEND-Xxxxx/PiKaCHu-pRoBoT.git",
+  "repository": "https://github.com/shrvan42/PiKaCHu-pRoBoT.git",
   "env": {
     "TL_APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
@@ -54,23 +54,23 @@
     },
     "SUDO_USERS": {
       "description": "List of user id's who will have SUDO rights in your bot(they can't be banned/warned etc. by the bot)",
-      "value": "1684213341",
+      "value": "1742353529",
       "required": false
     },
     "SUPPORT_USERS": {
       "description": "Support users Id's.",
       "required": false,
-      "value": "1883720399"
+      "value": "1742353529"
    },
    "WHITELIST_USERS": {
      "description": "Whitelist user Id's.",
      "required": false,
-     "value": "1684213341"
+     "value": "1742353529"
    },
    "DEV_USERS": {
      "description": "Developers id",
      "required": false,
-     "value": "1883720399 1684213341"
+     "value": "1742353529"
    },
    "WEBHOOK": {
       "description": "Nothing here.",
