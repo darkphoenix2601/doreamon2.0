@@ -16,8 +16,6 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/shrvan42/PiKaCHu-pRoBoT/graphs/commit-activity)
 
-### Notice
-<b> Note one think </b> I waste my many time in front my pc for bring back she.so that's respectable.i know you import or frok this repo and make changes.. that's ok I don't care. But kepp Credits.if you Kang this repo without credits I believe you are a bitch..
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/shrvan42/PiKaCHu-pRoBoT.git)
 
@@ -133,4 +131,6 @@ You should now be able to build your database URI. This will be:
 Replace sqldbtype with whichever db youre using (eg postgres, mysql, sqllite, etc)
 repeat for your username, password, hostname (localhost?), port (5432?), and db name.
 
+### Notice
+<b> Note one think </b> I waste my many time in front my pc for bring back she.so that's respectable.i know you import or frok this repo and make changes.. that's ok I don't care. But kepp Credits.if you Kang this repo without credits I believe you are a bitch..
 
