@@ -1,4 +1,4 @@
-# 𝐏𝐢𝐤𝐚𝐜𝐡𝐮 🇮🇳
+<h1 aling="center">𝐏𝐢𝐤𝐚𝐜𝐡𝐮 🇮🇳</h1>
 <p align="center">
     <a href="https://github.com/shrvan42/PiKaCHu-pRoBoT/stargazers"><img src="https://img.shields.io/github/stars/shrvan42/PiKaCHu-pRoBoT?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
     <a href="https://github.com/shrvan42/PiKaCHu-pRoBoT/network/members"><img src="https://img.shields.io/github/forks/shrvan42/PiKaCHu-pRoBoT?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a>
