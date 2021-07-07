@@ -1,5 +1,5 @@
-#    Copyright (C) 2020-2021 by @ALONE_SHADOW_X
-#    This program is a part of DaisyX TG bot project
+#    Copyright (C) 2020-2021 by @shrvan42
+#    This program is a part of TG x coders bot project
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
