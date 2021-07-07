@@ -53,9 +53,9 @@ buttons += [[InlineKeyboardButton(text="👾 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘
 ]]
 
 buttons += [[InlineKeyboardButton(text="🎉 𝐉𝐨𝐢𝐧 𝐅𝐨𝐫 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🎉",
-                                  url="https://t.me/PIKACHU_UPDATESS"),
+                                  url="https://t.me/TG_CODERS_UPDATES"),
              InlineKeyboardButton(text="💝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 💝",
-                                  url="https://t.me/PIIKACHU_SUPPORT"),
+                                  url="https://t.me/TG_X_CODERS"),
 ]]
 
 buttons += [[InlineKeyboardButton(text="💫 𝐂𝐥𝐨𝐬𝐞 𝐌𝐚𝐢𝐧 𝐌𝐞𝐧𝐮 💫",
