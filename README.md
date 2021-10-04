@@ -1,7 +1,6 @@
 #ｄｏｒｅａｍｏｎ 🇮🇳
 <p align="center">
-    <a href="https://github.com/darkphoenix2601/doreamon2.0"><img src="https://img.shields.io/github/stars/darkphoenix/doreamon2.0
-?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
+    <a href="https://github.com/darkphoenix2601/doreamon2.0"><img src="https://img.shields.io/github/stars/darkphoenix/doreamon2.0?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
     <a href="https://github.com/darkphoenix2601/doreamon2.0/network/members"><img src="https://img.shields.io/github/forks/darkphoenix/doreamon2.0?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a>
 </p>
 
